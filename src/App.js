@@ -24,7 +24,9 @@ function App() {
   }
 
   useEffect(() => {
-    inputValue.length === 0 ? setMeaning("Waiting for your input") : setMeaning(db[inputValue])
+    inputValue.length === 0 ? setMeaning("Waiting for your input") 
+    : db[inputValue] === undefined ?  setMeaning("Oops! we don't have that in our db") 
+    : setMeaning(db[inputValue])
   },[inputValue])
  
 
@@ -41,7 +43,7 @@ function App() {
     <main className="main">
       <input type="text" className="input" placeholder="Enter your emoji here..."  value={inputValue} onChange={inputChangeHandler}/>
       <small>Emoji Meaning</small>
-      <h1>{meaning}</h1>
+      <h1 className="meaning">{meaning}</h1>
       <div className="emoji-container">
       {
         emojis.map((item) => {

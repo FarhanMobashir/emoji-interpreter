@@ -90,6 +90,10 @@
   cursor: pointer;
 }
 
+.meaning {
+  height: 60px;
+}
+
 .footer {
   background-color: var(--primary-yellow);
   display: flex;
