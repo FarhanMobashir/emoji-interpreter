@@ -30,7 +30,7 @@ function App() {
     item.target.style.backgroundColor = "red";
     item.target.style.transition = "0.5s";
     item.target.style.borderRadius = "50px";
-    item.target.style.padding = "10px";
+    item.target.style.padding = "5px";
     setTimeout(() =>{
     item.target.style.backgroundColor = "white";
     item.target.style.padding = "0px";

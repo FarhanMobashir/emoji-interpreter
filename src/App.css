@@ -85,8 +85,8 @@
 }
 
 .emoji {
-  font-size: var(--font-size-4xl);
-  margin: var(--spacing-07) var(--spacing-03);
+  font-size: var(--font-size-3xl);
+  margin: var(--spacing-07) var(--spacing-05);
   cursor: pointer;
 }
 
@@ -146,6 +146,7 @@
   .emoji-container {
   display: flex;
   justify-content: center;
+  width: 90%;
   flex-wrap: wrap;
 }
 
