@@ -145,7 +145,7 @@
 
   .emoji {
   font-size: var(--font-size-3xl);
-  margin: var(--spacing-05) var(--spacing-06);
+  margin: var(--spacing-05) var(--spacing-05);
   cursor: pointer;
 }
 
