@@ -23,6 +23,21 @@ function App() {
       setInputValue(event.target.value.slice(0,2));
   }
 
+  function emojiClickHandler(item) {
+    console.log(item)
+    setInputValue("");
+    setMeaning(db[item.target.innerText]);
+    item.target.style.backgroundColor = "red";
+    item.target.style.transition = "0.5s";
+    item.target.style.borderRadius = "50px";
+    item.target.style.padding = "10px";
+    setTimeout(() =>{
+    item.target.style.backgroundColor = "white";
+    item.target.style.padding = "0px";
+
+    },1000)
+  }
+
   useEffect(() => {
     inputValue.length === 0 ? setMeaning("Waiting for your input") 
     : db[inputValue] === undefined ?  setMeaning("Oops! we don't have that in our db") 
@@ -49,7 +64,8 @@ function App() {
         emojis.map((item) => {
           return (
             <h1 className="emoji" key={item}
-            onClick={() => setMeaning(db[item])}
+            // onClick={() => setMeaning(db[item])}
+            onClick={emojiClickHandler}
             >{item}</h1>
           )
         })

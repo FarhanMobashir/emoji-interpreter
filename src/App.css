@@ -90,6 +90,10 @@
   cursor: pointer;
 }
 
+.emoji-active {
+  background-color: var(--text-black);
+}
+
 .meaning {
   height: 60px;
 }
