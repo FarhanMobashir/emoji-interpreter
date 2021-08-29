@@ -24,7 +24,7 @@ function App() {
   }
 
   function emojiClickHandler(item) {
-    console.log(item)
+    // console.log(item)
     setInputValue("");
     setMeaning(db[item.target.innerText]);
     item.target.style.backgroundColor = "red";
