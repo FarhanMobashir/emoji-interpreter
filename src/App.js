@@ -11,6 +11,7 @@ const db = {
   "🤐": "Zipper-Mouth Face",
   "🙄": "Face with Rolling Eyes",
   "😛": "Face with Tongue",
+  "😒": "Unamused Face",
 };
 
 const emojis = Object.keys(db);
